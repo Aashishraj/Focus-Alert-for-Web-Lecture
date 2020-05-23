@@ -194,13 +194,13 @@ def model():
     if request.method == "POST":
         details = request.form
 
-        cur = mysql.connection.cursor()
-        if(flag==0):
-            cur.execute("INSERT INTO trackit_student("Result") VALUES ("Alert")", (firstName, lastName))
-        else:
-            cur.execute("INSERT INTO trackit_student("Result") VALUES ("Non Alert")", (firstName, lastName))
-        mysql.connection.commit()
-        cur.close()
+#         cur = mysql.connection.cursor()
+#         if(flag==0):
+#             cur.execute("INSERT INTO users('of_pics') VALUES ('Alert')", (firstName, lastName))
+#         else:
+#             cur.execute("INSERT INTO users('of_pics') VALUES ('Non Alert')", (firstName, lastName))
+#         mysql.connection.commit()
+#         cur.close()
         return 'success'
     return render_template('index.html')
 
