@@ -205,5 +205,5 @@ def model():
     return render_template('index.html')
 
 
-if _name_ == '_main_':
+if True:
    app.run()
