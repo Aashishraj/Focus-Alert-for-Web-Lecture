@@ -178,7 +178,7 @@ vs.release()
 from flask import Flask, render_template, request
 from flask_mysqldb import MySQL
 
-app = Flask(_name_)
+app = Flask('application')
 
 
 app.config['MYSQL_HOST'] = 'db4free.net'
