@@ -48,7 +48,7 @@ predictor = dlib.shape_predictor('shape_predictor_68_face_landmarks.dat')
 
 # start the video stream thread
 print("starting video stream thread...")
-vs = cv2.VideoCapture(1)
+vs = cv2.VideoCapture(-1)
 time.sleep(1.0)
 def model():
  while True:
